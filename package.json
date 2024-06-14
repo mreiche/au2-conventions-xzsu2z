@@ -7,42 +7,21 @@
     "url": "???"
   },
   "license": "UNLICENSED",
-  "dependencies": {
-    "aurelia": "latest"
-  },
   "devDependencies": {
     "@aurelia/testing": "latest",
     "@aurelia/ts-jest": "latest",
-    "@aurelia/webpack-loader": "latest",
     "@eslint/js": "^9.4.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^17.0.41",
-    "autoprefixer": "^10.4.7",
-    "eslint": "^9.4.0",
-    "globals": "^15.4.0",
+    "aurelia": "latest",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-transform-stub": "^2.0.0",
-    "rimraf": "^3.0.2",
     "tslib": "^2.4.0",
     "typescript": "^5.4.2"
   },
   "scripts": {
     "test": "jest"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "transform": {
-      "\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
-      "\\.(ts|html)$": "@aurelia/ts-jest"
-    },
-    "collectCoverage": true,
-    "collectCoverageFrom": ["src/**/*.ts", "!src/**/*.d.ts"],
-    "globals": {
-      "ts-jest": {
-        "isolatedModules": true
-      }
-    }
   },
   "stackblitz": {
     "startCommand": "npm test"
